@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4bfc8; /* Matches Landing Page */
+    color: black;
+    margin: 10px;
+    padding: 0;
+}
+
+/* Centering Elements */
+.center {
+    text-align: center;
+}
+
+/* Heading Styles */
+h1, h3 {
+    font-family: "Century Gothic", sans-serif;
+    color: #8e68e6; /* Matches video background */
+    margin-bottom: 10px;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 4px;
+    background-color: #dd4f88; /* Matches button color */
+    margin: 20px 0;
+}
+
+/* Section Styling */
+.section {
+    text-align: justify;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fffdfd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Ensures spacing stays compact */
+    margin: 0;
+    padding: 0 5px; /* Closer to text */
+}
+
+nav a {
+    text-decoration: none;
+    color: #8e68e6;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #dd4f88;
+}
+
+/* Blockquote Styling */
+blockquote {
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #dd4f88;
+    border-right: 4px solid #dd4f88;
+    background: #fffdfd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #8e68e6;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px; /* Reduced space for better layout */
+    padding: 10px 15px;
+    background: #dd4f88;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #c4386f;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+}

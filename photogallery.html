@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="photogallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4bfc8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #8e68e6;
+            margin-bottom: 10px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item a {
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item a:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #dd4f88;
+        }
+
+        .gallery-item p {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 5px;
+            padding: 10px 15px;
+            background: #8e68e6;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: #6a4ec7;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+        <p>~ Welcome to my Collectionof memories ~</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="images/Image1.png" target="_blank">
+                    <img src="images/Image1.png" alt="Photo 1">
+                </a>
+                <p>Random picture of Friday</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image2.jpg" target="_blank">
+                    <img src="images/image2.jpg" alt="Photo 2">
+                </a>
+                <p>With my 2 childhood besties ^^</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image3.jpg" target="_blank">
+                    <img src="images/image3.jpg" alt="Photo 3">
+                </a>
+                <p>After lunch</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image4.jpg" target="_blank">
+                    <img src="images/image4.jpg" alt="Photo 4">
+                </a>
+                <p>With my cousins >_< </p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image5.jpg" target="_blank">
+                    <img src="images/image5.jpg" alt="Photo 5">
+                </a>
+                <p>Kim & Joanna <3 </p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image6.jpg" target="_blank">
+                    <img src="images/image6.jpg" alt="Photo 6">
+                </a>
+                <p>Random selfie kyrie boiii</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image7.jpg" target="_blank">
+                    <img src="images/image7.jpg" alt="Photo 7">
+                </a>
+                <p>Photobooth ^_^ </p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image8.jpg" target="_blank">
+                    <img src="images/image8.jpg" alt="Photo 8">
+                </a>
+                <p>Cherry Blossoms</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image9.jpg" target="_blank">
+                    <img src="images/image9.jpg" alt="Photo 9">
+                </a>
+                <p>Golden Fields</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image10.jpg" target="_blank">
+                    <img src="images/image10.jpg" alt="Photo 10">
+                </a>
+                <p>Serene Lake</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image11.jpg" target="_blank">
+                    <img src="images/image11.jpg" alt="Photo 11">
+                </a>
+                <p>Bridge at Night</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image12.jpg" target="_blank">
+                    <img src="images/image12.jpg" alt="Photo 12">
+                </a>
+                <p>Deep Forest</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image13.jpg" target="_blank">
+                    <img src="images/image13.jpg" alt="Photo 13">
+                </a>
+                <p>Snowy Cabin</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image14.jpg" target="_blank">
+                    <img src="images/image14.jpg" alt="Photo 14">
+                </a>
+                <p>Flower Garden</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image15.jpg" target="_blank">
+                    <img src="images/image15.jpg" alt="Photo 15">
+                </a>
+                <p>Majestic Waterfall</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image16.jpg" target="_blank">
+                    <img src="images/image16.jpg" alt="Photo 16">
+                </a>
+                <p>Old Town Streets</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image17.jpg" target="_blank">
+                    <img src="images/image17.jpg" alt="Photo 17">
+                </a>
+                <p>Birds in Flight</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image18.jpg" target="_blank">
+                    <img src="images/image18.jpg" alt="Photo 18">
+                </a>
+                <p>Autumn Leaves</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image19.jpg" target="_blank">
+                    <img src="images/image19.jpg" alt="Photo 19">
+                </a>
+                <p>Stormy Seas</p>
+            </div>
+            <div class="gallery-item">
+                <a href="images/image20.jpg" target="_blank">
+                    <img src="images/image20.jpg" alt="Photo 20">
+                </a>
+                <p>Night Sky</p>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i> Go Top</a>
+            <a href="Landing Page.html"><i class="fa-solid fa-house"></i> Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
